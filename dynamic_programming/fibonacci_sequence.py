@@ -4,8 +4,6 @@ Classic fibonacci sequence
 Create a function that returns the nth value in the fibonacci sequence
 """
 
-# NO RECURSION!
-
 def nth_fibonacci_term(n = int):
     """
     takes in n which represents index integer, returns an integer corresponding with value
