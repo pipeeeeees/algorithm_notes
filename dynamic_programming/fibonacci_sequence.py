@@ -18,9 +18,10 @@ def nth_fibonacci_term(n = int):
         return fibonacci_list[1]
     
     # without using recursion, calculate and store all values into the list
-    for i in range(n + 1):
-        if i > 1:
-            fibonacci_list.append(fibonacci_list[-1] + fibonacci_list[-2])
+    for i in range(2, n + 1):
+        fibonacci_list.append(fibonacci_list[-1] + fibonacci_list[-2])
+    
+    # runs in O(n) time
     return fibonacci_list[-1]
 
-print(nth_fibonacci_term(20))
+print(nth_fibonacci_term(5))
